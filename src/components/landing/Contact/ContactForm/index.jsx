@@ -117,20 +117,42 @@ export default withFormik({
 					)
 					.join('&')
 			}
-			await fetch('/?no-cache=1', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: encode({
-					'form-name': 'portfolio-dev',
-					name,
-					email,
-					message,
-					'g-recaptcha-response': recaptcha,
-				}),
-			})
-			await setSubmitting(false)
-			await setFieldValue('success', true)
-			setTimeout(() => resetForm(), 2000)
+			const xhr = new XMLHttpRequest()
+      		xhr.open('POST', process.env.EMAIL_API_ENDPOINT)
+      		xhr.onreadystatechange = (event) => {
+				const responseUrl = event.target.responseURL
+				console.log(event.target.response)
+				if (responseUrl === process.env.EMAIL_API_ENDPOINT) {
+					console.log('success!')
+				  } else {
+					console.log('error!')
+				  }
+
+				setFieldValue('success', true)
+				resetForm()
+	  		}
+			xhr.setRequestHeader('Content-Type', 'application/json')
+			xhr.setRequestHeader('x-api-key', process.env.EMAIL_API_KEY)
+
+      		let message = this.model.body
+      		// eslint-disable-next-line
+      		message = message
+        		.replace(/\n/g, '\\\\n')
+        		.replace(/\r/g, '\\\\r')
+				.replace(/\t/g, '\\\\t')
+				
+      		const msg = JSON.stringify({
+        		to: process.env.EMAIL_RECEIVER,
+        		body: message,
+        		subject: 'email from jnabor.github.io',
+        		fromname: name,
+        		fromemail: email
+			  })
+			  
+			  console.log('sending email...')
+      		xhr.send(msg)
+			setSubmitting(false)
+
 		} catch (err) {
 			setSubmitting(false)
 			setFieldValue('success', false)

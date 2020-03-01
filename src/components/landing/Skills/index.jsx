@@ -13,7 +13,7 @@ export const Skills = () => (
       <Details>
         <h1>Technologies</h1>
         <p>
-          AWS, TypeScript, React, etc.
+          AWS, TypeScript, React, Embedded, etc.
         </p>
       </Details>
     </SkillsWrapper>
