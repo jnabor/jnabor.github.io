@@ -1,0 +1,35 @@
+module.exports = {
+  defaultTitle: 'Nabor Jayson',
+  logo: 'https://jnabor.github.io/favicon/favicon-512.png',
+  author: 'Nabor Jayson',
+  url: 'https://jnabor.github.io',
+  legalName: 'Nabor Jayson',
+  defaultDescription: 'I’m Jayson and I’m a Software & DevOps Engineer!',
+  socialLinks: {
+    twitter: 'http://www.twitter.com/sonabstudios',
+    github: 'https://github.com/sonabstudios',
+    linkedin: 'https://www.linkedin.com/in/sonabstudios/',
+    instagram: 'https://instagram.com/sonabstudios',
+    youtube: 'https://www.youtube.com/user/sonabstudios',
+    google: 'https://plus.google.com/u/0/+Isonabstudios',
+  },
+  googleAnalyticsID: 'UA-159335246-1',
+  themeColor: '#6b63ff',
+  backgroundColor: '#6b63ff',
+  social: {
+    facebook: 'sonabstudios',
+    twitter: '@sonabstudios',
+  },
+  address: {
+    city: 'City',
+    region: 'Region',
+    country: 'Country',
+    zipCode: 'ZipCode',
+  },
+  contact: {
+    email: 'email',
+    phone: 'phone number',
+  },
+  foundingDate: '2020',
+  recaptcha_key: '6LfRod0UAAAAABdFDTKzu_q0lkcsZoml1Qo7juM8',
+};
