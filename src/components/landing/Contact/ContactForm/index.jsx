@@ -74,8 +74,7 @@ const ContactForm = ({
 			<InputField>
 				<Center>
 					<h4>
-						Your message has been successfully sent, I will get back to you
-						ASAP!
+						Your message has been successfully sent!
 					</h4>
 				</Center>
 			</InputField>
