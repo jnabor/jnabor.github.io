@@ -129,7 +129,11 @@ export default withFormik({
 				  }
 
 				setFieldValue('success', true)
-				resetForm()
+
+				setTimeout(()=> {
+					resetForm()
+				}, 2000)
+				
 	  		}
 			xhr.setRequestHeader('Content-Type', 'application/json')
 			xhr.setRequestHeader('x-api-key', process.env.EMAIL_API_KEY)
