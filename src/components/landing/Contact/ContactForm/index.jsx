@@ -106,7 +106,7 @@ export default withFormik({
 			recaptcha: Yup.string().required('Robots are not welcome yet!'),
 		}),
 	handleSubmit: async (
-		{ name, email, message, recaptcha },
+		{ name, email, message },
 		{ setSubmitting, resetForm, setFieldValue }
 	) => {
 		try {
@@ -134,22 +134,23 @@ export default withFormik({
 			xhr.setRequestHeader('Content-Type', 'application/json')
 			xhr.setRequestHeader('x-api-key', process.env.EMAIL_API_KEY)
 
-      		let message = this.model.body
+      		let myMessage = message
       		// eslint-disable-next-line
-      		message = message
+      		myMessage = myMessage
         		.replace(/\n/g, '\\\\n')
         		.replace(/\r/g, '\\\\r')
 				.replace(/\t/g, '\\\\t')
-				
+			
+			console.log('forming email...')
       		const msg = JSON.stringify({
         		to: process.env.EMAIL_RECEIVER,
-        		body: message,
+        		body: myMessage,
         		subject: 'email from jnabor.github.io',
         		fromname: name,
         		fromemail: email
 			  })
 			  
-			  console.log('sending email...')
+			console.log('sending email...')
       		xhr.send(msg)
 			setSubmitting(false)
 
