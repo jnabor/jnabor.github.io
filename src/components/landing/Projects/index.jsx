@@ -18,7 +18,7 @@ export const Projects = () => {
         github {
           viewer {
             repositories(
-              first: 12
+              first: 14
               orderBy: { field: STARGAZERS, direction: DESC }
             ) {
               edges {
