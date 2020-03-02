@@ -4,10 +4,10 @@ module.exports = {
   author: 'Nabor Jayson',
   url: 'https://jnabor.github.io',
   legalName: 'Nabor Jayson',
-  defaultDescription: 'I’m Jayson and I’m a Software & DevOps Engineer!',
+  defaultDescription: 'I’m Jayson and I’m a Software Engineer!',
   socialLinks: {
     twitter: 'http://www.twitter.com/sonabstudios',
-    github: 'https://github.com/sonabstudios',
+    github: 'https://github.com/jnabor/',
     linkedin: 'https://www.linkedin.com/in/sonabstudios/',
     instagram: 'https://instagram.com/sonabstudios',
     youtube: 'https://www.youtube.com/user/sonabstudios',

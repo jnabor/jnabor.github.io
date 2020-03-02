@@ -8,13 +8,13 @@
   {
     "id": 1,
     "name": "Github",
-    "link": "https://github.com/sonabstudios",
+    "link": "https://github.com/jnabor",
     "icon": "/icons/github.svg"
   },
   {
     "id": 2,
     "name": "StackOverflow",
-    "link": "https://stackoverflow.com/users/story/7396786",
+    "link": "https://stackoverflow.com/users/sonabstudios",
     "icon": "/icons/stackoverflow.svg"
   },
   {
