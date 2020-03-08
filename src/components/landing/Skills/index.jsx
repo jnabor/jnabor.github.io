@@ -12,7 +12,7 @@ export const Skills = () => (
       <Details>
         <h1>Full Stack</h1>
         <p>
-          AWS, TypeScript, React, Node, etc.
+          Amazon Web Services, TypeScript, React, Angular, Node, DevOps, etc.
         </p>
       </Details>
     </SkillsWrapper>

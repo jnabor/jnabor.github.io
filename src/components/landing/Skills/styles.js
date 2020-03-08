@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
+  margin-top: 40px;
   background-image: url(${detailsIllustration});
   background-size: contain;
   background-position: left top;

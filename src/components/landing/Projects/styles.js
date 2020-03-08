@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import preview1 from 'assets/thumbnail/ra2.jpg'
+import preview2 from 'assets/thumbnail/tts.jpg'
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -9,7 +11,7 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
+  gap: 1.5rem 1.5rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
@@ -24,7 +26,8 @@ export const Item = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px; 
 
   h4 {
     color: #212121;
@@ -35,27 +38,37 @@ export const Item = styled.div`
   }
 `;
 
-export const Content = styled.div`
-  padding: 1rem 0;
+export const Card = styled.div`
+  padding: 0;
+  background: #fff;
+  height: 100%;
 `;
 
-export const Stats = styled.div`
-  display: flex;
-  align-items: center;
 
-  div {
-    display: flex;
-    &:first-child {
-      margin-right: 0.5rem;
-    }
+export const Content = styled.div`
+   padding: 2rem 1.5rem 0 1.5rem;
+   height: 110px;
+   overflow-y:hidden;
+`;
 
-    img {
-      margin: 0;
-    }
+export const Thumbnail1 = styled.div`
+  flex: 1;
+  width: 100%;
+  padding-top: 100%;
+  background: url(${preview1});
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+`;
 
-    span {
-      color: #000;
-      margin-left: 0.5rem;
-    }
-  }
+export const Thumbnail2 = styled.div`
+  flex: 1;
+  width: 100%;
+  padding-top: 100%;
+  background: url(${preview2});
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 `;

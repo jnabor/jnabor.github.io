@@ -12,7 +12,7 @@ export const Embedded = () => (
       <Details>
         <h1>Embedded</h1>
         <p>
-          Drivers, Firmware, IoT
+          Drivers, Firmware, Linux, IoT
         </p>
       </Details>
     </SkillsWrapper>
