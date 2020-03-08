@@ -10,8 +10,8 @@ export const Intro = () => (
 		<Header />
 		<IntroWrapper as={Container}>
 			<Details>
-				<h1>Hi There!</h1>
-				<h4>I’m Jayson and I’m a Software Engineer!</h4>
+				<h1>Hello, I'm Jayson.</h1>
+				<h4>I’m a creative Software Engineer.</h4>
 			</Details>
 			<Thumbnail>
 				<img src={dev} alt="I’m Jayson and I’m a Software Engineer!" />
