@@ -3,7 +3,7 @@ import NavbarLinks from '../NavbarLinks'
 import { Wrapper } from './styles'
 
 const Sidebar = ({ sidebar, toggle }) => (
-	<Wrapper active={sidebar} onClick={toggle}>
+	<Wrapper active={sidebar} onClick={()=> toggle(false)}>
 		<NavbarLinks />
 	</Wrapper>
 )
