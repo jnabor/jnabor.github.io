@@ -27,7 +27,7 @@ export const Projects = () => {
           <Card>
             <Thumbnail2/>
             <Content>
-              <h4>TexSpeech™ (early development)</h4>
+              <h4>TexSpeech™</h4>
               <p>A service that turns text into lifelike speech</p>                
             </Content>            
           </Card>
