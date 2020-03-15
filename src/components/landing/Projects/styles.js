@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import preview1 from 'assets/thumbnail/ra2.jpg'
 import preview2 from 'assets/thumbnail/tts.jpg'
+import preview3 from 'assets/thumbnail/kds.jpg'
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -67,6 +68,17 @@ export const Thumbnail2 = styled.div`
   width: 100%;
   padding-top: 100%;
   background: url(${preview2});
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+`;
+
+export const Thumbnail3 = styled.div`
+  flex: 1;
+  width: 100%;
+  padding-top: 100%;
+  background: url(${preview3});
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;

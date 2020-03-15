@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'components/common'
-import { Wrapper, Grid, Item, Card, Content, Thumbnail1, Thumbnail2 } from './styles'
+import { Wrapper, Grid, Item, Card, Content, Thumbnail1, Thumbnail2, Thumbnail3 } from './styles'
 
 export const Projects = () => {
 
@@ -29,6 +29,18 @@ export const Projects = () => {
             <Content>
               <h4>TexSpeech™</h4>
               <p>A service that turns text into lifelike speech</p>                
+            </Content>            
+          </Card>
+        </Item>
+        <Item 
+          as="a"
+          target="_blank"
+          rel="noopener noreferrer"href="https://jnabor.github.io/kryptodash">                     
+          <Card>
+            <Thumbnail3/>
+            <Content>
+              <h4>KryptoDash™</h4>
+              <p>Cryptocurrency prices with charts and history </p>                
             </Content>            
           </Card>
         </Item>
