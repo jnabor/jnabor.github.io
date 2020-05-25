@@ -23,7 +23,7 @@ export const Projects = () => {
         <Item 
           as="a"
           target="_blank"
-          rel="noopener noreferrer"href="https://dev.texspeech.com">                     
+          rel="noopener noreferrer"href="https://saeyr.com">                     
           <Card>
             <Thumbnail2/>
             <Content>
