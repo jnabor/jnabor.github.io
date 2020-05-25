@@ -27,8 +27,8 @@ export const Projects = () => {
           <Card>
             <Thumbnail2/>
             <Content>
-              <h4>TexSpeech™</h4>
-              <p>A service that turns text into lifelike speech</p>                
+              <h4>Saeyr™</h4>
+              <p>Automation services for voice and text processing</p>                
             </Content>            
           </Card>
         </Item>
