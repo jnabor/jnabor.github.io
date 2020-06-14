@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'components/common'
-import { Wrapper, Grid, Item, Card, Content, Thumbnail1, Thumbnail2, Thumbnail3 } from './styles'
+import { Wrapper, Grid, Item, Card, Content, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4 } from './styles'
 
 export const Projects = () => {
 
@@ -41,6 +41,18 @@ export const Projects = () => {
             <Content>
               <h4>KryptoDash™</h4>
               <p>Cryptocurrency prices with charts and history </p>                
+            </Content>            
+          </Card>
+        </Item>
+        <Item 
+          as="a"
+          target="_blank"
+          rel="noopener noreferrer"href="https://jnabor.github.io/react-robot-game/">                     
+          <Card>
+            <Thumbnail4/>
+            <Content>
+              <h4>Robot Game™</h4>
+              <p>A simple matrix robot game made with React</p>                
             </Content>            
           </Card>
         </Item>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import preview1 from 'assets/thumbnail/ra2.jpg'
 import preview2 from 'assets/thumbnail/tts.jpg'
 import preview3 from 'assets/thumbnail/kds.jpg'
+import preview4 from 'assets/thumbnail/robot.jpg'
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -52,35 +53,29 @@ export const Content = styled.div`
    overflow-y:hidden;
 `;
 
-export const Thumbnail1 = styled.div`
+
+export const Thumbnail= styled.div`
   flex: 1;
   width: 100%;
   padding-top: 100%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+`;
+
+export const Thumbnail1 = styled(Thumbnail)`
   background: url(${preview1});
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
 `;
 
-export const Thumbnail2 = styled.div`
-  flex: 1;
-  width: 100%;
-  padding-top: 100%;
+export const Thumbnail2 = styled(Thumbnail)`
   background: url(${preview2});
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
 `;
 
-export const Thumbnail3 = styled.div`
-  flex: 1;
-  width: 100%;
-  padding-top: 100%;
+export const Thumbnail3 = styled(Thumbnail)`
   background: url(${preview3});
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+`;
+
+export const Thumbnail4 = styled(Thumbnail)`
+  background: url(${preview4});
 `;
