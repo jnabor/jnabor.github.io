@@ -13,7 +13,7 @@ export const Projects = () => {
            target="_blank"
            rel="noopener noreferrer"href="https://ra2.sonabstudios.com">
           <Card>
-            <Thumbnail1/>
+            <Thumbnail1 />
             <Content>
               <h4>RA2™ Serverless</h4>
               <p>SaaS Starter Kit wih React, AWS Amplify</p>                
@@ -25,7 +25,7 @@ export const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"href="https://saeyr.com">                     
           <Card>
-            <Thumbnail2/>
+            <Thumbnail2 />
             <Content>
               <h4>Saeyr™</h4>
               <p>Automation services for voice and text processing</p>                

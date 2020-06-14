@@ -58,24 +58,24 @@ export const Thumbnail= styled.div`
   flex: 1;
   width: 100%;
   padding-top: 100%;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
 `;
 
 export const Thumbnail1 = styled(Thumbnail)`
-  background: url(${preview1});
+  background: url(${preview1}) ;
+  background-size: contain;
 `;
 
 export const Thumbnail2 = styled(Thumbnail)`
   background: url(${preview2});
+  background-size: contain;
 `;
 
 export const Thumbnail3 = styled(Thumbnail)`
   background: url(${preview3});
+  background-size: contain;
 `;
 
 export const Thumbnail4 = styled(Thumbnail)`
   background: url(${preview4});
+  background-size: contain;
 `;
