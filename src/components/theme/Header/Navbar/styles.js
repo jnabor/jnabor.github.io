@@ -10,3 +10,9 @@ export const Wrapper = styled.div`
     color: #212121;
   }
 `;
+
+export const Brand = styled.div`
+  display: grid;
+  width: 200px;
+  grid-template-columns: 70px auto;
+`

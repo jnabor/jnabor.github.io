@@ -1,6 +1,6 @@
 module.exports = {
-  defaultTitle: 'Nabor Jayson',
-  logo: 'https://jnabor.github.io/favicon/favicon-512.png',
+  defaultTitle: 'Jayson Nabor',
+  logo: 'https://jnabor.github.io/favicon/favicon.png',
   author: 'Nabor Jayson',
   url: 'https://jnabor.github.io',
   legalName: 'Nabor Jayson',

@@ -7,7 +7,7 @@ export const Footer = () => (
 	<Wrapper>
 		<Flex as={Container}>
 			<Details>
-				<h2>Nabor Jayson</h2>
+				<h3>Jayson Nabor</h3>
 				<span>
 					© All rights are reserved | {new Date().getFullYear()}
 				</span>

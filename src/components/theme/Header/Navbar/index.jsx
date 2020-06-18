@@ -2,11 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Container } from 'components/common'
 import NavbarLinks from '../NavbarLinks'
-import { Wrapper } from './styles'
+import { Wrapper, Brand } from './styles'
 
 const Navbar = () => (
 	<Wrapper as={Container}>
-		<Link to="/">Nabor Jayson</Link>
+		<Link to="/"><Brand>
+		<div>
+			<img src="./icons/jayson_64.png" />
+		</div>
+		<div style={{ paddingTop: '27px' }}>JAYSON NABOR</div>
+		</Brand></Link>
 		<NavbarLinks desktop />
 	</Wrapper>
 )
