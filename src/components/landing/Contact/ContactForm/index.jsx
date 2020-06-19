@@ -3,7 +3,6 @@ import { Form, withFormik, FastField, ErrorMessage } from 'formik'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import { Button, Input } from 'components/common'
-import { recaptcha_key } from 'data/config'
 import { Error, Center, InputField } from './styles'
 
 const ContactForm = ({
@@ -63,7 +62,7 @@ const ContactForm = ({
 			<InputField>
 				<FastField
 					component={Recaptcha}
-					sitekey={recaptcha_key}
+					sitekey={process.env.GATSBY_CAPTCHA_KEY}
 					name="recaptcha"
 					onChange={value => setFieldValue('recaptcha', value)}
 				/>

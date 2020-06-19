@@ -1,14 +1,13 @@
-const config = require('./src/data/config');
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 module.exports = {
   siteMetadata: {
-    title: config.defaultTitle,
-    description: config.defaultDescription,
-    author: config.author,
+    title: process.env.GATSBY_TITLE,
+    description: process.env.GATSBY_DESCRIPTION,
+    author: process.env.GATSBY_AUTHOR,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -22,7 +21,7 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+          Authorization: `bearer ${process.env.GATSBY_GITHUB_TOKEN}`,
         },
         fetchOptions: {},
       },
@@ -30,14 +29,14 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: config.themeColor,
+        color: process.env.THEME_COLOR,
         showSpinner: false,
       },
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: config.googleAnalyticsID,
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
         head: true,
       },
     },
@@ -62,11 +61,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: config.defaultTitle,
+        name: process.env.GATSBY_TITLE,
         short_name: 'starter',
         start_url: '/',
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
+        background_color: process.env.GATSBY_BACKGROUND_COLOR,
+        theme_color: process.env.THEME_COLOR,
         display: 'minimal-ui',
         icon: './static/favicon/favicon.png',
       },
