@@ -146,10 +146,10 @@ export default withFormik({
 			console.log('forming email...')
       		const msg = JSON.stringify({
         		to: process.env.GATSBY_EMAIL_RECEIVER,
-        		body: myMessage,
+        		body: `${myMessage}`,
         		subject: 'email from jnabor.github.io',
-        		fromname: name,
-        		fromemail: email
+        		fromname: `${name}`,
+        		fromemail: `${email}`
 			  })
 			  
 			console.log('sending email...')
