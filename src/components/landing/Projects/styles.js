@@ -58,7 +58,7 @@ export const Content = styled.div`
    z-index: 999;
    position: absolute;
    bottom:0;
-   background-color: rgba(255,255,255,.8);
+   background-color: rgba(255,255,255,.7);
    display: grid;
    grid-template-columns: 64px auto;
    grid-template-areas: 'logo description';

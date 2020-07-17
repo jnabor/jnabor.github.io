@@ -50,7 +50,7 @@ export const Projects = () => {
             <Thumbnail3/>
             <Content>   
               <Logo>
-                <img src="./icons/robot_64.png" />
+                <img src="./icons/kryptodash_64.png" />
               </Logo>
               <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>KryptoDash™</h4>
