@@ -20,7 +20,7 @@ export const Projects = () => {
               </Logo>
               <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>Saeyr™</h4>
-                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>Automation for voice and text processing</div>
+                <div style={{color: '#444',padding: '0px 15px 0 10px' }}>Automation for voice and text processing</div>
               </Desc>           
             </Content>          
           </Card>
@@ -37,7 +37,7 @@ export const Projects = () => {
               </Logo>
                <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>RA2™ Serverless</h4>
-                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>SaaS Starter Kit with React, AWS Amplify</div>
+                <div style={{color: '#444',padding: '0px 15px 0 10px' }}>SaaS Starter Kit with React, AWS Amplify</div>
               </Desc>      
             </Content>          
           </Card>
@@ -54,7 +54,7 @@ export const Projects = () => {
               </Logo>
               <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>KryptoDash™</h4>
-                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>Cryptocurrency prices and history</div>
+                <div style={{color: '#444',padding: '0px 15px 0 10px' }}>Cryptocurrency prices and history</div>
               </Desc>                   
             </Content>           
           </Card>
@@ -71,7 +71,7 @@ export const Projects = () => {
               </Logo>
               <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>SonabStudios™</h4>
-                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>My website created with Nuxt.js</div>
+                <div style={{color: '#444',padding: '0px 15px 0 10px' }}>My website created with Nuxt.js</div>
               </Desc>                   
             </Content>           
           </Card>
@@ -88,7 +88,7 @@ export const Projects = () => {
               </Logo>
               <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>Robot Game™</h4>
-                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>A simple matrix game made with React</div>
+                <div style={{color: '#444',padding: '0px 15px 0 10px' }}>A simple matrix game made with React</div>
               </Desc>             
             </Content>           
           </Card>
