@@ -28,7 +28,7 @@ export const Item = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px; 
 
   h4 {
@@ -41,18 +41,37 @@ export const Item = styled.div`
 `;
 
 export const Card = styled.div`
+  position: relative;
   padding: 0;
-  background: #fff;
+  margin: 0;
   height: 100%;
+  width: 100%;
 `;
 
 
 export const Content = styled.div`
-   padding: 2rem 1.5rem 0 1.5rem;
+   flex: 1;
+   padding: 0;
+   margin: 0;
+   width: 100%;   
    height: 110px;
-   overflow-y:hidden;
+   z-index: 999;
+   position: absolute;
+   bottom:0;
+   background-color: rgba(255,255,255,.8);
+   display: grid;
+   grid-template-columns: 64px auto;
+   grid-template-areas: 'logo description';
 `;
 
+export const Logo = styled.div`
+  grid-area: logo;
+  padding: 22px 10px 0 15px;
+`
+export const Desc = styled.div`
+  padding-top: 10px;
+  grid-area: description;
+`
 
 export const Thumbnail= styled.div`
   flex: 1;
@@ -66,6 +85,7 @@ export const Thumbnail1 = styled(Thumbnail)`
 `;
 
 export const Thumbnail2 = styled(Thumbnail)`
+width: 100%;
   background: url(${preview2});
   background-size: contain;
 `;

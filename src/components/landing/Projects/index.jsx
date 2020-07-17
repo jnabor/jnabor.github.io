@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'components/common'
-import { Wrapper, Grid, Item, Card, Content, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4 } from './styles'
+import { Wrapper, Grid, Item, Card, Content, Logo, Desc, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4 } from './styles'
 
 export const Projects = () => {
 
@@ -15,9 +15,14 @@ export const Projects = () => {
           <Card>
             <Thumbnail1 />
             <Content>
-              <h4>RA2™ Serverless</h4>
-              <p>SaaS Starter Kit wih React, AWS Amplify</p>                
-            </Content>            
+              <Logo>
+              <img src="./icons/ra2_64.png" />
+              </Logo>
+               <Desc>
+                <h4 style={{marginBottom: '0', padding: '10px'}}>RA2™ Serverless</h4>
+                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>SaaS Starter Kit with React, AWS Amplify</div>
+              </Desc>      
+            </Content>          
           </Card>
         </Item>
         <Item 
@@ -27,9 +32,14 @@ export const Projects = () => {
           <Card>
             <Thumbnail2 />
             <Content>
-              <h4>Saeyr™</h4>
-              <p>Automation services for voice and text processing</p>                
-            </Content>            
+            <Logo>
+              <img src="./icons/saeyr_64.png" />
+              </Logo>
+              <Desc>
+                <h4 style={{marginBottom: '0', padding: '10px'}}>Saeyr™</h4>
+                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>Automation for voice and text processing</div>
+              </Desc>           
+            </Content>          
           </Card>
         </Item>
         <Item 
@@ -38,10 +48,15 @@ export const Projects = () => {
           rel="noopener noreferrer"href="https://jnabor.github.io/kryptodash">                     
           <Card>
             <Thumbnail3/>
-            <Content>
-              <h4>KryptoDash™</h4>
-              <p>Cryptocurrency prices with charts and history </p>                
-            </Content>            
+            <Content>   
+              <Logo>
+                <img src="./icons/robot_64.png" />
+              </Logo>
+              <Desc>
+                <h4 style={{marginBottom: '0', padding: '10px'}}>KryptoDash™</h4>
+                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>Cryptocurrency prices and history</div>
+              </Desc>                   
+            </Content>           
           </Card>
         </Item>
         <Item 
@@ -51,9 +66,14 @@ export const Projects = () => {
           <Card>
             <Thumbnail4/>
             <Content>
-              <h4>Robot Game™</h4>
-              <p>A simple matrix robot game made with React</p>                
-            </Content>            
+              <Logo>
+                <img src="./icons/robot_64.png" />
+              </Logo>
+              <Desc>
+                <h4 style={{marginBottom: '0', padding: '10px'}}>Robot Game™</h4>
+                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>A simple matrix game made with React</div>
+              </Desc>             
+            </Content>           
           </Card>
         </Item>
         </Grid>
