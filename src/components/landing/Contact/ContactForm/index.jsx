@@ -140,17 +140,18 @@ export default withFormik({
         		.replace(/\n/g, '\\\\n')
         		.replace(/\r/g, '\\\\r')
 				.replace(/\t/g, '\\\\t')
-				.replace(`"`, `\"`)
+				.replace(`"`, `\\"`)
 	
 			
       		const msg = JSON.stringify({
         		to: process.env.GATSBY_EMAIL_RECEIVER,
-        		body: `${myMessage}`,
-        		subject: 'email from jnabor.github.io',
+        		body: (`${myMessage}`),
+        		subject: 'jnabor.github.io contact',
         		fromname: `${name}`,
         		fromemail: `${email}`
 			  })
 			  
+			console.log(msg)
 			console.log('sending email...')
       		xhr.send(msg)
 			setSubmitting(false)
