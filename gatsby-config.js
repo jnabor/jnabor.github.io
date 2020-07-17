@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: process.env.THEME_COLOR,
+        color: process.env.GATSBY_THEME_COLOR,
         showSpinner: false,
       },
     },
@@ -65,7 +65,7 @@ module.exports = {
         short_name: 'starter',
         start_url: '/',
         background_color: process.env.GATSBY_BACKGROUND_COLOR,
-        theme_color: process.env.THEME_COLOR,
+        theme_color: process.env.GATSBY_THEME_COLOR,
         display: 'minimal-ui',
         icon: './static/favicon/favicon.png',
       },

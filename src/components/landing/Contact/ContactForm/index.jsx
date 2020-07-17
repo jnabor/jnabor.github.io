@@ -127,7 +127,6 @@ export default withFormik({
 				  }
 
 				setFieldValue('success', true)
-
 				setTimeout(()=> {
 					resetForm()
 				}, 2000)
@@ -136,14 +135,14 @@ export default withFormik({
 			xhr.setRequestHeader('Content-Type', 'application/json')
 			xhr.setRequestHeader('x-api-key', process.env.GATSBY_EMAIL_API_KEY)
 
-      		let myMessage = message
       		// eslint-disable-next-line
-      		myMessage = myMessage
+      		let myMessage = message
         		.replace(/\n/g, '\\\\n')
         		.replace(/\r/g, '\\\\r')
 				.replace(/\t/g, '\\\\t')
+				.replace(`"`, `\"`)
+	
 			
-			console.log('forming email...')
       		const msg = JSON.stringify({
         		to: process.env.GATSBY_EMAIL_RECEIVER,
         		body: `${myMessage}`,
