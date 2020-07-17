@@ -9,7 +9,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="code2.svg"
+   sodipodi:docname="intro.svg"
    version="1.1"
    viewBox="0 0 1139.17088 654.54324"
    height="654.54324"
@@ -72,9 +72,9 @@
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
      inkscape:window-x="-8"
-     inkscape:cy="327.27161"
-     inkscape:cx="569.58545"
-     inkscape:zoom="0.95946973"
+     inkscape:cy="391.74618"
+     inkscape:cx="887.21765"
+     inkscape:zoom="0.47973488"
      showgrid="false"
      id="namedview87"
      inkscape:window-height="1137"
@@ -86,7 +86,8 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <title
      id="title2">progressive_app</title>
   <g
@@ -4476,10 +4477,10 @@
      fill="#3f3d56"
      d="m 1025.6266,281.80404 h -2.3786 v -65.1616 a 37.71374,37.71374 0 0 0 -37.71393,-37.71377 h -138.0535 a 37.71373,37.71373 0 0 0 -37.7138,37.71377 v 357.48139 a 37.71374,37.71374 0 0 0 37.7138,37.71378 h 138.0535 a 37.71374,37.71374 0 0 0 37.71393,-37.71378 v -245.9367 h 2.3787 z" />
   <path
-     style="display:inline"
+     style="display:inline;fill:#ffcc00;fill-opacity:1"
      id="path60"
      fill="#f9a826"
-     d="m 1015.2167,218.85903 v 356.96 a 28.16523,28.16523 0 0 1 -28.16033,28.17 h -138.7198 a 28.16511,28.16511 0 0 1 -28.1599,-28.17 v -356.96 a 28.163,28.163 0 0 1 28.1599,-28.16 h 16.83 a 13.3792,13.3792 0 0 0 12.39,18.43 h 79.09 a 13.37908,13.37908 0 0 0 12.39,-18.43 h 18.02 a 28.16308,28.16308 0 0 1 28.16013,28.16 z" />
+     d="m 1014.6956,216.25343 v 356.96 a 28.16523,28.16523 0 0 1 -28.16035,28.17 h -138.7198 a 28.16511,28.16511 0 0 1 -28.1599,-28.17 v -356.96 a 28.163,28.163 0 0 1 28.1599,-28.16 h 16.83 a 13.3792,13.3792 0 0 0 12.39,18.43 h 79.09 a 13.37908,13.37908 0 0 0 12.39,-18.43 h 18.02 a 28.16308,28.16308 0 0 1 28.16015,28.16 z" />
   <rect
      style="display:inline"
      id="rect62"
@@ -4528,25 +4529,22 @@
      width="141.24028"
      y="397.19827"
      x="847.07678" />
-  <path
-     style="display:inline"
-     id="path78"
-     opacity="0.1"
-     d="m 1015.2167,537.69906 v 38.12 a 28.16523,28.16523 0 0 1 -28.16033,28.17 h -138.7198 a 28.16511,28.16511 0 0 1 -28.1599,-28.17 v -192.21 l 116.8699,92.33 2,1.58 21.74,17.17 2.03,1.61 z" />
   <g
-     style="display:inline"
-     transform="matrix(0.43121347,0,0,0.51063694,415.78124,442.13163)"
+     style="display:inline;opacity:0.42394;fill:#8080ff"
+     transform="matrix(0.43121347,0,0,0.51063694,419.95021,416.07557)"
      id="g1040">
     <polygon
        id="polygon58"
        fill="#ffd42f"
-       points="535.27,527.21 480.786,472.725 535.72,417.79 519.06,401.13 447.014,472.275 519.06,543.42 "
-       transform="translate(590.01867,-293.18968)" />
+       points="480.786,472.725 535.72,417.79 519.06,401.13 447.014,472.275 519.06,543.42 535.27,527.21 "
+       transform="translate(590.01867,-293.18968)"
+       style="fill:#8080ff" />
     <polygon
        id="polygon60"
        fill="#ffd42f"
-       points="609.117,527.21 663.602,472.725 608.667,417.79 625.327,401.13 697.373,472.275 625.327,543.42 "
-       transform="translate(590.01867,-293.18968)" />
+       points="663.602,472.725 608.667,417.79 625.327,401.13 697.373,472.275 625.327,543.42 609.117,527.21 "
+       transform="translate(590.01867,-293.18968)"
+       style="fill:#8080ff" />
   </g>
   <g
      style="display:inline"
@@ -4848,38 +4846,4 @@
        data-name="Rectangle 74"
        id="e6ed1ccd-2cfd-450f-a339-07df3a1ee6bb-5" />
   </g>
-  <path
-     style="stroke-width:0.243662"
-     d="m 1101.7929,548.49731 c 0,14.99599 -28.9173,48.40257 -28.9173,48.40257 0,0 -28.9174,-33.40658 -28.9174,-48.40257 a 28.917423,27.152659 0 0 1 57.8347,0 z"
-     fill="#3871c8"
-     id="path32" />
-  <ellipse
-     style="stroke-width:0.243662"
-     ry="16.055487"
-     rx="17.098997"
-     cx="1072.8755"
-     cy="547.31677"
-     opacity="0.2"
-     id="circle34-1" />
-  <ellipse
-     style="stroke-width:0.243662"
-     ry="5.9814544"
-     rx="6.3702145"
-     cx="1072.3135"
-     cy="547.67322"
-     fill="#3871c8"
-     id="circle36-9" />
-  <path
-     style="stroke-width:0.243662"
-     d="m 1082.2584,565.02501 a 9.5553225,8.972183 0 1 0 -18.7656,0 z"
-     fill="#3871c8"
-     id="path38" />
-  <ellipse
-     style="stroke-width:0.325641"
-     ry="9.7835779"
-     rx="10.416129"
-     cx="1073.2241"
-     cy="609.53418"
-     fill="#3871c8"
-     id="circle68-3" />
 </svg>
