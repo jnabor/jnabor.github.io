@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'components/common'
-import { Wrapper, Grid, Item, Card, Content, Logo, Desc, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4 } from './styles'
+import { Wrapper, Grid, Item, Card, Content, Logo, Desc, Thumbnail1, Thumbnail2, Thumbnail3, Thumbnail4, Thumbnail5 } from './styles'
 
 export const Projects = () => {
 
@@ -8,6 +8,23 @@ export const Projects = () => {
     <Wrapper as={Container} id="projects">
       <h2>Personal Projects</h2>
       <Grid>
+      <Item 
+          as="a"
+          target="_blank"
+          rel="noopener noreferrer"href="https://saeyr.com">                     
+          <Card>
+            <Thumbnail2 />
+            <Content>
+            <Logo>
+              <img src="./icons/saeyr_64.png" />
+              </Logo>
+              <Desc>
+                <h4 style={{marginBottom: '0', padding: '10px'}}>Saeyr™</h4>
+                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>Automation for voice and text processing</div>
+              </Desc>           
+            </Content>          
+          </Card>
+        </Item>
         <Item          
            as="a"
            target="_blank"
@@ -20,25 +37,8 @@ export const Projects = () => {
               </Logo>
                <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>RA2™ Serverless</h4>
-                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>SaaS Starter Kit with React, AWS Amplify</div>
+                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>SaaS Starter Kit with React, AWS Amplify</div>
               </Desc>      
-            </Content>          
-          </Card>
-        </Item>
-        <Item 
-          as="a"
-          target="_blank"
-          rel="noopener noreferrer"href="https://saeyr.com">                     
-          <Card>
-            <Thumbnail2 />
-            <Content>
-            <Logo>
-              <img src="./icons/saeyr_64.png" />
-              </Logo>
-              <Desc>
-                <h4 style={{marginBottom: '0', padding: '10px'}}>Saeyr™</h4>
-                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>Automation for voice and text processing</div>
-              </Desc>           
             </Content>          
           </Card>
         </Item>
@@ -54,7 +54,24 @@ export const Projects = () => {
               </Logo>
               <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>KryptoDash™</h4>
-                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>Cryptocurrency prices and history</div>
+                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>Cryptocurrency prices and history</div>
+              </Desc>                   
+            </Content>           
+          </Card>
+        </Item>
+        <Item 
+          as="a"
+          target="_blank"
+          rel="noopener noreferrer"href="https://sonabstudios.com">                     
+          <Card>
+            <Thumbnail5/>
+            <Content>   
+              <Logo>
+                <img src="./icons/sonabstudios_64.png" />
+              </Logo>
+              <Desc>
+                <h4 style={{marginBottom: '0', padding: '10px'}}>SonabStudios™</h4>
+                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>My website created with Nuxt.js</div>
               </Desc>                   
             </Content>           
           </Card>
@@ -71,7 +88,7 @@ export const Projects = () => {
               </Logo>
               <Desc>
                 <h4 style={{marginBottom: '0', padding: '10px'}}>Robot Game™</h4>
-                <div style={{color: '#555',padding: '0px 15px 0 10px' }}>A simple matrix game made with React</div>
+                <div style={{color: '#777',padding: '0px 15px 0 10px' }}>A simple matrix game made with React</div>
               </Desc>             
             </Content>           
           </Card>

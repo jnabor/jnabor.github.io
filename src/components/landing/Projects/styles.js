@@ -3,6 +3,7 @@ import preview1 from 'assets/thumbnail/ra2.jpg'
 import preview2 from 'assets/thumbnail/tts.jpg'
 import preview3 from 'assets/thumbnail/kds.jpg'
 import preview4 from 'assets/thumbnail/robot.jpg'
+import preview5 from 'assets/thumbnail/sonabstudios.jpg'
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -58,7 +59,7 @@ export const Content = styled.div`
    z-index: 999;
    position: absolute;
    bottom:0;
-   background-color: rgba(255,255,255,.7);
+   background-color: rgba(255,255,255,.8);
    display: grid;
    grid-template-columns: 64px auto;
    grid-template-areas: 'logo description';
@@ -97,5 +98,10 @@ export const Thumbnail3 = styled(Thumbnail)`
 
 export const Thumbnail4 = styled(Thumbnail)`
   background: url(${preview4});
+  background-size: contain;
+`;
+
+export const Thumbnail5 = styled(Thumbnail)`
+  background: url(${preview5});
   background-size: contain;
 `;
