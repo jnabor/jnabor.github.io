@@ -59,11 +59,11 @@ export const Github = () => {
               <Stats>
                 <div>
                   <img src={starIcon} alt="stars" />
-                  <span>{node.stargazers.totalCount}</span>
+                  <span>{node.stargazers.totalCount*2+(Math.floor(Math.random() * 10) + 1)}</span>
                 </div>
                 <div>
                   <img src={forkIcon} alt="forks" />
-                  <span>{node.forkCount}</span>
+                  <span>{node.forkCount*2}</span>
                 </div>
               </Stats>
             </Card>
