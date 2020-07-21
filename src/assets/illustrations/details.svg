@@ -1,10 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 614.622 768.265">
-  <defs>
-    <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="details.svg"
+   id="svg7"
+   version="1.1"
+   viewBox="0 0 614.622 768.265">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="svg7"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="384.13251"
+     inkscape:cx="307.311"
+     inkscape:zoom="0.95670112"
+     showgrid="false"
+     id="namedview9"
+     inkscape:window-height="891"
+     inkscape:window-width="1519"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
       .cls-1 {
         fill: #efeeff;
       }
     </style>
   </defs>
-  <path id="Path_29" data-name="Path 29" class="cls-1" d="M0,1467.864S10.75,1717.88,168.635,1767.5s379.947,197.995,441.42,302.151S0,2298.293,0,2200.875-1.328,1467.38,0,1467.864Z" transform="translate(0.59 -1467.864)"/>
+  <path
+     style="opacity:0.0798005"
+     transform="translate(0.59 -1467.864)"
+     d="M0,1467.864S10.75,1717.88,168.635,1767.5s379.947,197.995,441.42,302.151S0,2298.293,0,2200.875-1.328,1467.38,0,1467.864Z"
+     class="cls-1"
+     data-name="Path 29"
+     id="Path_29" />
 </svg>

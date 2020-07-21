@@ -10,9 +10,9 @@ export const Skills = () => (
         <img src={dev} alt="I’m Jayson and I’m a Software Engineer!" />
       </Thumbnail>
       <Details>
-        <h1>Full Stack</h1>
-        <p>
-          AWS, TypeScript, React, Node, Golang, DevOps...
+        <h1 style={{ color: '#DFDFDF' }}>Full Stack</h1>
+        <p style={{ color: '#C5C5C5' }}>
+          AWS, TypeScript, React, Node, Golang, DevOps
         </p>
       </Details>
     </SkillsWrapper>
