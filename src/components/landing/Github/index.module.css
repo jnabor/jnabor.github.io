@@ -1,7 +1,7 @@
 .header {
   margin: 20px 0 40px 0;
   max-width: 180px;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 20px 30px 18px 30px;
   box-shadow: 8px 8px 16px #2b2b2c, -8px -8px 16px #3f3f40;
   color: rgb(255, 255, 255, 0.6);
@@ -12,17 +12,16 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 25px;
-  background-color: #353536;
-  box-shadow: 6px 6px 12px #252526, -6px -6px 12px #454546;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 4px 4px 12px #252526, -4px -4px 12px #454546;
   padding: 0;
 }
 
 .card {
-  padding: 20px;
+  padding: 10px 30px;
   margin: 0;
-  width: 100%;
-  border-radius: 25px;
-  background-color: transparent;
+  width: auto;
+  border-radius: 10px;
   z-index: 99;
 }

@@ -5,7 +5,7 @@
 .header {
   margin: 20px 0 40px 0;
   max-width: 180px;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 20px 30px 18px 30px;
   box-shadow: 8px 8px 16px #2b2b2c, -8px -8px 16px #3f3f40;
   color: rgb(255, 255, 255, 0.6);
@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: #353536;
   box-shadow: 8px 8px 16px #252526, -8px -8px 16px #454546;
   padding: 0;
@@ -31,7 +31,7 @@
   margin: 0;
   height: 100%;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.05);
   z-index: 99;
 }
@@ -49,8 +49,8 @@
   display: grid;
   grid-template-columns: 64px auto;
   grid-template-areas: 'logo description';
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .logo {
@@ -77,8 +77,8 @@
   height: 100%;
   padding: 0;
   margin: 0;
-  border-radius: 25px;
-  box-shadow: inset 0 0 4px #353536;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #353536;
 }
 
 .thumbnail1 {

@@ -57,8 +57,8 @@ export const Github = () => {
             <div className={styles.item}>
               <div className={styles.card}>
                 <Content>
-                  <h4>{node.name}</h4>
-                  <p>{node.description}</p>
+                  <h4 style={{ marginBottom: '10px' }}>{node.name}</h4>
+                  <p style={{color: '#858585' }}>{node.description}</p>
                 </Content>
                 <Stats>
                   <div>
