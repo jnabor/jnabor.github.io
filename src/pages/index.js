@@ -5,15 +5,11 @@ import { Intro, Skills, Embedded, Contact, Projects, Github } from 'components/l
 export default () => (
   <Layout>
     <SEO />
+    <Intro />
     <Projects />
     <Skills />
     <Github />
     <Embedded />
-    {/*<Intro />
-   
-    
-      
-    <Embedded />
-    <Contact />*/}
+    <Contact />
   </Layout>
 )

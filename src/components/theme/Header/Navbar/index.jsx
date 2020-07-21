@@ -6,12 +6,6 @@ import { Wrapper, Brand } from './styles'
 
 const Navbar = () => (
 	<Wrapper as={Container}>
-		<Link to="/"><Brand>
-		<div>
-			<img src="./icons/jayson_64.png" />
-		</div>
-		<div style={{ paddingTop: '27px' }}>JAYSON NABOR</div>
-		</Brand></Link>
 		<NavbarLinks desktop />
 	</Wrapper>
 )
