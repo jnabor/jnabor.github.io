@@ -58,10 +58,7 @@ export const Global = createGlobalStyle`
     dfn {
       font-style: italic;
     }
-    h1 {
-      font-size: 2em;
-      margin: 0.67em 0;
-    }
+
     mark {
       background-color: #ff0;
       color: #000;
@@ -222,21 +219,7 @@ export const Global = createGlobalStyle`
       font-size: 2.25rem;
       line-height: 1.1;
     }
-    h2 {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
-      margin-bottom: 1.45rem;
-      color: inherit;
-      font-weight: bold;
-      text-rendering: optimizeLegibility;
-      font-size: 1.62671rem;
-      line-height: 1.1;
-    }
+
 
 
     h5 {
@@ -602,15 +585,24 @@ export const Global = createGlobalStyle`
       }
     }
 
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    h2 {
+  margin: 0;
+      padding: 0;
+      color: inherit;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+      font-size: 1.62671rem;
+      line-height: 1.1;
+    }
+
     h3 {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin: 0;
+      padding: 0;
       color: inherit;
       text-rendering: optimizeLegibility;
       font-size: 1.38316rem;
@@ -618,14 +610,8 @@ export const Global = createGlobalStyle`
     }
 
     h4 {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
-      margin-bottom: 1.45rem;
+  margin: 0;
+      padding: 0;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
@@ -633,5 +619,7 @@ export const Global = createGlobalStyle`
       line-height: 1.1;
     }
 
+
+
   }
-`;
+`

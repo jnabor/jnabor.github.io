@@ -6,11 +6,12 @@ export default () => (
   <Layout>
     <SEO />
     <Projects />
+    <Github />
     {/*<Intro />
    
     <Skills />
-    <Github />    
+      
     <Embedded />
     <Contact />*/}
   </Layout>
-);
+)

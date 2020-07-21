@@ -7,7 +7,9 @@ export const Projects = () => {
 
   return (
     <Wrapper as={Container} id="projects">
-      <div className={styles.header}>Personal Projects</div>
+      <div className={styles.header}>
+        <h3>Personal Projects</h3>
+      </div>
 
       <Grid>
         <a target="_blank" rel="noopener noreferrer" href="https://saeyr.com">

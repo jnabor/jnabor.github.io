@@ -5,6 +5,8 @@ import starIcon from 'assets/icons/star.svg'
 import forkIcon from 'assets/icons/fork.svg'
 import { Wrapper, Grid, Item, Content, Stats } from './styles'
 
+import styles from './index.module.css'
+
 export const Github = () => {
   const {
     github: {
@@ -41,33 +43,39 @@ export const Github = () => {
   )
   return (
     <Wrapper as={Container} id="projects">
-      <h2>GitHub Projects</h2>
+      <div className={styles.header}>
+        <h3>GitHub Projects</h3>
+      </div>
       <Grid>
         {edges.map(({ node }) => (
-          <Item
+          <a
             key={node.id}
-            as="a"
             href={node.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card>
-              <Content>
-                <h4>{node.name}</h4>
-                <p>{node.description}</p>
-              </Content>
-              <Stats>
-                <div>
-                  <img src={starIcon} alt="stars" />
-                  <span>{node.stargazers.totalCount*2+(Math.floor(Math.random() * 10) + 1)}</span>
-                </div>
-                <div>
-                  <img src={forkIcon} alt="forks" />
-                  <span>{node.forkCount*2}</span>
-                </div>
-              </Stats>
-            </Card>
-          </Item>
+            <div className={styles.item}>
+              <div className={styles.card}>
+                <Content>
+                  <h4>{node.name}</h4>
+                  <p>{node.description}</p>
+                </Content>
+                <Stats>
+                  <div>
+                    <img src={starIcon} alt="stars" />
+                    <span>
+                      {node.stargazers.totalCount * 2 +
+                        (Math.floor(Math.random() * 10) + 1)}
+                    </span>
+                  </div>
+                  <div>
+                    <img src={forkIcon} alt="forks" />
+                    <span>{node.forkCount * 2}</span>
+                  </div>
+                </Stats>
+              </div>
+            </div>
+          </a>
         ))}
       </Grid>
     </Wrapper>

@@ -6,10 +6,10 @@ export const Wrapper = styled.div`
 
 export const Grid = styled.div`
   display: grid;
-  align-items: center;
+
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
-  gap: 1.5rem 1.5rem;
+  gap: 2rem 2rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
@@ -17,21 +17,6 @@ export const Grid = styled.div`
 
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
-  }
-`;
-
-export const Item = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px; 
-  h4 {
-    color: #212121;
-  }
-
-  p {
-    color: #707070;
   }
 `;
 
