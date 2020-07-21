@@ -7,5 +7,6 @@ export const Layout = ({ children }) => (
 	<>
 		<Global />
 		{children}
+		<Footer />
 	</>
 )

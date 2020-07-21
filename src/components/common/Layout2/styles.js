@@ -237,8 +237,36 @@ export const Global = createGlobalStyle`
       font-size: 1.62671rem;
       line-height: 1.1;
     }
-
-
+    h3 {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      margin-bottom: 1.45rem;
+      color: inherit;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+      font-size: 1.38316rem;
+      line-height: 1.1;
+    }
+    h4 {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      margin-bottom: 1.45rem;
+      color: inherit;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+      font-size: 1rem;
+      line-height: 1.1;
+    }
     h5 {
       margin-left: 0;
       margin-right: 0;
@@ -566,12 +594,6 @@ export const Global = createGlobalStyle`
     pre tt:after {
       content: '';
     }
-
-
-
-
-
-
     @media only screen and (max-width: 480px) {
       html {
         font-size: 100%;
@@ -581,7 +603,7 @@ export const Global = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
-      color: rgb(255, 255, 255, 0.7);
+      color: hsla(0, 0%, 0%, 0.8);
       font-weight: normal;
       word-wrap: break-word;
       font-kerning: normal;
@@ -589,7 +611,6 @@ export const Global = createGlobalStyle`
       -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-      background-color: #353536;
     }
 
     a {
@@ -601,37 +622,5 @@ export const Global = createGlobalStyle`
         outline: none;
       }
     }
-
-    h3 {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
-      margin-bottom: 1.45rem;
-      color: inherit;
-      text-rendering: optimizeLegibility;
-      font-size: 1.38316rem;
-      line-height: 1.1;
-    }
-
-    h4 {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
-      margin-bottom: 1.45rem;
-      color: inherit;
-      font-weight: bold;
-      text-rendering: optimizeLegibility;
-      font-size: 1rem;
-      line-height: 1.1;
-    }
-
   }
 `;
