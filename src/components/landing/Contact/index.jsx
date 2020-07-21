@@ -3,16 +3,19 @@ import { Container } from 'components/common'
 import contact from 'assets/illustrations/contact.svg'
 import { Wrapper, Details, Thumbnail } from './styles'
 import ContactForm from './ContactForm'
+import styles from './index.module.css'
 
 export const Contact = () => (
-  <Wrapper as={Container} id="contact">
-    <Details>
-    <h2>Contact Me</h2>
-      <ContactForm />
-    </Details>
-    <Thumbnail>
-      <img src={contact} alt="I’m Jayson and I’m a Software Engineer!" />
-    </Thumbnail>
+         <Wrapper as={Container} id="contact">
+           <Details>
+             <div className={styles.header}>
+               <h3>Contact Me</h3>
+             </div>
 
-  </Wrapper>
-)
+             <ContactForm />
+           </Details>
+           <Thumbnail>
+             <img src={contact} alt="I’m Jayson and I’m a Software Engineer!" />
+           </Thumbnail>
+         </Wrapper>
+       )
