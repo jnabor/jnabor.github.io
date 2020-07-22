@@ -10,21 +10,40 @@ export const Wrapper = styled.div`
 
 export const IntroWrapper = styled.div`
   padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 192px auto 50%;
+  grid-template-areas: 'intro details thumbnail';
 
-  @media (max-width: 960px) {
-    flex-direction: column;
+  @media (max-width: 1330px) {
+    grid-template-columns: 340px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'intro thumbnail'
+    'details thumbnail';
+  }
+
+  @media (max-width: 1100px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'intro'
+    'details' 
+    'thumbnail';
   }
 `;
 
+export const IntroText = styled.div`
+  grid-area: intro;
+  margin: auto;
+`
 export const Details = styled.div`
-  flex: 1;
+  grid-area: details;
+  margin: auto 10px;
 
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
+  @media (max-width: 1330px) {
+    text-align: center;
+  }
+
+  @media (max-width: 1100px) {
+    margin: auto;
   }
 
   h1 {
@@ -34,6 +53,8 @@ export const Details = styled.div`
 
     @media (max-width: 680px) {
       font-size: 30pt;
+      margin: auto;
+      text-align: center;
     }
   }
 
@@ -51,9 +72,15 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
   flex: 1;
+  grid-area: thumbnail;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1330px) {
+    margin-left: 40px;
+  }
+
+  @media (max-width: 1100px) {
     width: 100%;
+    margin: auto;
   }
 
   img {
