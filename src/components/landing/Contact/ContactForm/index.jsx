@@ -11,7 +11,10 @@ const ContactForm = ({
 	values,
 	errors,
 	touched,
-}) => (
+}) => { 
+	console.log('captcha: ', process.env.GATSBY_CAPTCHA_KEY)
+
+	return (
 	<Form
 		name="portfolio-dev"
 		method="post"
@@ -26,7 +29,7 @@ const ContactForm = ({
 				name="name"
 				component="input"
 				aria-label="name"
-				placeholder="Full name*"
+				placeholder="Name*"
 				error={touched.name && errors.name}
 			/>
 			<ErrorMessage component={Error} name="name" />
@@ -64,7 +67,8 @@ const ContactForm = ({
 					component={Recaptcha}
 					sitekey={process.env.GATSBY_CAPTCHA_KEY}
 					name="recaptcha"
-					onChange={value => setFieldValue('recaptcha', value)}
+					onChange={value => { setFieldValue('recaptcha', value)
+					console.log('captcha: ', value)}}
 				/>
 				<ErrorMessage component={Error} name="recaptcha" />
 			</InputField>
@@ -79,12 +83,12 @@ const ContactForm = ({
 			</InputField>
 		)}
 		<Center>
-			<Button secondary type="submit" disabled={isSubmitting}>
+			<Button secondary type="submit" disabled={!values.name || !values.email || !values.message || isSubmitting}>
 				SUBMIT
 			</Button>
 		</Center>
 	</Form>
-)
+)}
 
 export default withFormik({
 	mapPropsToValues: () => ({
