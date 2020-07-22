@@ -8,8 +8,17 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
 `;
 
+export const AppBar = styled.div`
+  background-color: rgba(53,53,54, .97);
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+`;
+
 export const IntroWrapper = styled.div`
-  padding: 4rem 0;
+
+  padding: 220px 0 0 0;
   display: grid;
   grid-template-columns: 192px auto 50%;
   grid-template-areas: 'intro details thumbnail';

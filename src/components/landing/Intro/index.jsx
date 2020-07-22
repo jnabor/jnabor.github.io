@@ -1,13 +1,15 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Header } from 'components/theme'
-import { Container, Button } from 'components/common'
+import { Container } from 'components/common'
 import dev from 'assets/illustrations/intro.svg'
-import { Wrapper, IntroWrapper, IntroText, Details, Thumbnail } from './styles'
+import { Wrapper, AppBar, IntroWrapper, IntroText, Details, Thumbnail } from './styles'
 
 export const Intro = () => (
-         <Wrapper>
-           <Header />
+  <>
+             <AppBar>
+              <Header />
+           </AppBar>  
+         <Wrapper id="home">         
            <IntroWrapper as={Container}>
              <IntroText >
               <img src="./icons/jayson_192.png" />
@@ -23,4 +25,5 @@ export const Intro = () => (
              </Thumbnail>
            </IntroWrapper>
          </Wrapper>
+         </>
        )

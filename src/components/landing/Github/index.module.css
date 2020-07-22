@@ -3,7 +3,7 @@
   max-width: 160px;
   border-radius: 10px;
   padding: 20px 30px 18px 30px;
-  box-shadow: 8px 8px 16px #2b2b2c, -8px -8px 16px #3f3f40;
+  box-shadow: 8px 8px 12px #2b2b2c, -8px -8px 16px #3f3f40;
   color: rgb(255, 255, 255, 0.6);
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -14,7 +14,7 @@
   overflow: hidden;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: 4px 4px 12px #252526, -4px -4px 12px #454546;
+  box-shadow: 4px 4px 12px #252526, -4px -4px 16px #454546;
   padding: 0;
 }
 
