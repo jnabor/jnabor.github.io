@@ -463,9 +463,10 @@ export const Global = createGlobalStyle`
     select:-webkit-autofill:focus {
       border: none;
       -webkit-text-fill-color: rgba(255,255,255, 0.8);
-      -webkit-box-shadow: 4px 4px 12px #2a2a2b inset !important, -4px -4px 12px #404041 inset !important;
+      -webkit-box-shadow: 4px 4px 8px #2b2b2c inset !important, -4px -4px 8px #3f3f40 inset !important;
       transition: background-color 5000s ease-in-out 0s;
+    }
 }
 
-}
+
 `
