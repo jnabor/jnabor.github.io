@@ -591,7 +591,7 @@ export const Global = createGlobalStyle`
     }
 
     h2 {
-  margin: 0;
+      margin: 0;
       padding: 0;
       color: inherit;
       font-weight: bold;

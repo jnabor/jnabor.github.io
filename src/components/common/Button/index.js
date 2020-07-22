@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   cursor: pointer;
-  border-radius: 3px;
-  padding: 0.7rem 2.5rem;
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
   border: none;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
@@ -12,20 +12,19 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
-  background: #0074d9;
-
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 2px;
+  background-color: #353536;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 7px 7px 14px #2b2b2c, -7px -7px 14px #3f3f40;
+  margin-top: 10px;
   &:focus {
     outline: none;
   }
-
   &:disabled {
     background: gray;
   }
-
-  ${({ secondary }) =>
-    secondary &&
-    `
-		background: #001F3F;
-	`}
-`;
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+`
