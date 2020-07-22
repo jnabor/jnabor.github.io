@@ -52,8 +52,6 @@ const NavbarLinks = () => {
       (top + height) > window.pageYOffset &&
       (left + width) > window.pageXOffset
     );
-
-    return false
   }
 
 
