@@ -18,11 +18,42 @@ const NavbarLinks = () => {
   }, [])
 
   const handleScroll = () => {
-    setHome(window.scrollY < 200 && window.scrollY > -1)
-    setProject(window.scrollY < 1200 && window.scrollY >= 200)
-    setSkills(window.scrollY < 3000 && window.scrollY >= 1200)
-    setContact(window.scrollY >= 3000)
-    console.log(window.scrollY)
+    setHome(false)
+    setProject(false)
+    setSkills(false)
+    setContact(false)
+
+    if (isVisible(window.document.getElementById('home'))) {
+      setHome(true)
+    } else if (isVisible(window.document.getElementById('projects'))) {
+      setProject(true)
+    }  else if (isVisible(window.document.getElementById('about'))) {
+      setSkills(true)
+    } else if (isVisible(window.document.getElementById('contact'))) {
+      setContact(true)
+    }    
+  }
+
+  const isVisible = (el) => {
+    let top = el.offsetTop;
+    let left = el.offsetLeft;
+    let width = el.offsetWidth;
+    let height = el.offsetHeight;
+  
+    while(el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+  
+    return (
+      top < (window.pageYOffset + window.innerHeight) &&
+      left < (window.pageXOffset + window.innerWidth) &&
+      (top + height) > window.pageYOffset &&
+      (left + width) > window.pageXOffset
+    );
+
+    return false
   }
 
 
