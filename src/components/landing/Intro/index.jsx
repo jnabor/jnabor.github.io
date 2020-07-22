@@ -2,18 +2,18 @@ import React from 'react'
 import { Header } from 'components/theme'
 import { Container } from 'components/common'
 import dev from 'assets/illustrations/intro.svg'
-import { Wrapper, AppBar, IntroWrapper, IntroText, Details, Thumbnail } from './styles'
+import { Wrapper, AppBar, IntroWrapper, IntroLogo, Details, Thumbnail } from './styles'
 
 export const Intro = () => (
   <>
-             <AppBar>
-              <Header />
-           </AppBar>  
+         <AppBar>
+           <Header />
+         </AppBar>  
          <Wrapper id="home">         
            <IntroWrapper as={Container}>
-             <IntroText >
+             <IntroLogo >
               <img src="./icons/jayson_192.png" />
-             </IntroText>
+             </IntroLogo>
              <Details>
                <h1 style={{ color: '#EFEFEF' }}>
                  hello, I'm <b>Jayson</b>

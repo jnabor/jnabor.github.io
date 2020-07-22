@@ -39,9 +39,17 @@ export const IntroWrapper = styled.div`
   }
 `;
 
-export const IntroText = styled.div`
+export const IntroLogo = styled.div`
   grid-area: intro;
-  margin: auto;
+  margin: auto 0;
+
+  @media (max-width: 1330px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1100px) {
+    margin: 0 auto;
+  }
 `
 export const Details = styled.div`
   grid-area: details;
