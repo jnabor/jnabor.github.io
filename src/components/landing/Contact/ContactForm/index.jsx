@@ -12,7 +12,7 @@ const ContactForm = ({
 	errors,
 	touched,
 }) => { 
-	console.log('submitting:', isSubmitting)
+
 	const disableButton = !values.name || !values.email || !values.message || isSubmitting	|| !values.recaptcha
 	const CaptchaHandler = (value) => {
 		setFieldValue('recaptcha', value)
