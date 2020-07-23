@@ -21,7 +21,7 @@ export const Projects = () => {
                   <img src="./icons/saeyr_64.png" />
                 </div>
                 <div className={styles.desc}>
-                  <div className={styles.title}>Saeyrâ„¢</div>
+                  <div className={styles.title}>Saeyr™</div>
                   <div style={{ padding: '0px 15px 0 10px' }}>
                     Automation for voice and text processing
                   </div>
@@ -43,7 +43,7 @@ export const Projects = () => {
                   <img src="./icons/ra2_64.png" />
                 </div>
                 <div className={styles.desc}>
-                  <div className={styles.title}>RA2â„¢ Serverless</div>
+                  <div className={styles.title}>RA2™ Serverless</div>
                   <div style={{ padding: '0px 15px 0 10px' }}>
                     SaaS Starter Kit with React, AWS Amplify
                   </div>
@@ -65,7 +65,7 @@ export const Projects = () => {
                   <img src="./icons/kryptodash_64.png" />
                 </div>
                 <div className={styles.desc}>
-                  <div className={styles.title}>KryptoDashâ„¢</div>
+                  <div className={styles.title}>KryptoDash™</div>
                   <div style={{ padding: '0px 15px 0 10px' }}>
                     Cryptocurrency prices and history
                   </div>
@@ -87,7 +87,7 @@ export const Projects = () => {
                   <img src="./icons/sonabstudios_64.png" />
                 </div>
                 <div className={styles.desc}>
-                  <div className={styles.title}>SonabStudiosâ„¢</div>
+                  <div className={styles.title}>SonabStudios™</div>
                   <div style={{ padding: '0px 15px 0 10px' }}>
                     My website created with Nuxt.js
                   </div>
@@ -109,7 +109,7 @@ export const Projects = () => {
                   <img src="./icons/robot_64.png" />
                 </div>
                 <div className={styles.desc}>
-                  <div className={styles.title}>Robot Gameâ„¢</div>
+                  <div className={styles.title}>Robot Game™</div>
                   <div style={{ padding: '0px 15px 0 10px' }}>
                     A simple matrix game made with React
                   </div>

@@ -6,8 +6,8 @@ import ContactForm from './ContactForm'
 import styles from './index.module.css'
 
 export const Contact = () => (
-         <Wrapper as={Container} id="contact">
-           <Details>
+         <Wrapper as={Container} >
+           <Details id="contact" >
              <div className={styles.header}>
                <h3>Contact Me</h3>
              </div>

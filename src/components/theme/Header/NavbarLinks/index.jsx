@@ -24,22 +24,18 @@ const NavbarLinks = () => {
     setContact(false)
 
     if (isVisible(window.document.getElementById('home'))) {
-      console.log('home')
       setHome(true)
     } else if (isVisible(window.document.getElementById('projects'))) {
-      console.log('projects')
       setProject(true)
     }  else if (isVisible(window.document.getElementById('about'))) {
-      console.log('about')
       setSkills(true)
     } else if (isVisible(window.document.getElementById('contact'))) {
-      console.log('contact')
       setContact(true)
     }    
   }
 
   const isVisible = (el) => {
-    let top = el.offsetTop;
+    let top = el.offsetTop-100;
     let left = el.offsetLeft;
     let width = el.offsetWidth;
     let height = el.offsetHeight;

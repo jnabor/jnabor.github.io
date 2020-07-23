@@ -12,10 +12,7 @@ const ContactForm = ({
 	errors,
 	touched,
 }) => { 
-	console.log('captcha: ', process.env.GATSBY_CAPTCHA_KEY)
-
-	const disableButton = !values.name || !values.email || !values.message || isSubmitting
-	
+	const disableButton = !values.name || !values.email || !values.message || isSubmitting	
 	const CaptchaHandler = (value) => {
 		setFieldValue('recaptcha', value)
 	}
@@ -133,15 +130,11 @@ export default withFormik({
 				console.log(event.target.response)
 				if (responseUrl === process.env.GATSBY_EMAIL_API_ENDPOINT) {
 					console.log('success!')
+					setFieldValue('success', true)
 				  } else {
 					console.log('error!')
-				  }
-
-				setFieldValue('success', true)
-				setTimeout(()=> {
-					resetForm()
-				}, 2000)
-				
+				  }		
+				setTimeout(()=> resetForm(), 2000)
 	  		}
 			xhr.setRequestHeader('Content-Type', 'application/json')
 			xhr.setRequestHeader('x-api-key', process.env.GATSBY_EMAIL_API_KEY)
@@ -162,7 +155,6 @@ export default withFormik({
         		fromemail: `${email}`
 			  })
 			  
-			console.log(msg)
 			console.log('sending email...')
       		xhr.send(msg)
 			setSubmitting(false)
