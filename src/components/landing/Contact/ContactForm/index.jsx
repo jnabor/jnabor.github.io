@@ -118,11 +118,11 @@ export default withFormik({
 					.join('&')
 			}
 			const xhr = new XMLHttpRequest()
-      		xhr.open('POST', process.env.EMAIL_API_ENDPOINT)
+      		xhr.open('POST', process.env.GATSBY_EMAIL_API_ENDPOINT)
       		xhr.onreadystatechange = (event) => {
 				const responseUrl = event.target.responseURL
 				console.log(event.target.response)
-				if (responseUrl === process.env.EMAIL_API_ENDPOINT) {
+				if (responseUrl === process.env.GATSBY_EMAIL_API_ENDPOINT) {
 					console.log('success!')
 				  } else {
 					console.log('error!')
@@ -132,7 +132,7 @@ export default withFormik({
 				resetForm()
 	  		}
 			xhr.setRequestHeader('Content-Type', 'application/json')
-			xhr.setRequestHeader('x-api-key', process.env.EMAIL_API_KEY)
+			xhr.setRequestHeader('x-api-key', process.env.GATSBY_EMAIL_API_KEY)
 
       		let myMessage = message
       		// eslint-disable-next-line
@@ -143,7 +143,7 @@ export default withFormik({
 			
 			console.log('forming email...')
       		const msg = JSON.stringify({
-        		to: process.env.EMAIL_RECEIVER,
+        		to: process.env.GATSBY_EMAIL_RECEIVER,
         		body: myMessage,
         		subject: 'email from jnabor.github.io',
         		fromname: name,

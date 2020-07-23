@@ -13,7 +13,7 @@ module.exports = {
     youtube: 'https://www.youtube.com/user/sonabstudios',
     google: 'https://plus.google.com/u/0/+Isonabstudios',
   },
-  googleAnalyticsID: 'UA-159335246-1',
+  googleAnalyticsID: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
   social: {
@@ -31,5 +31,5 @@ module.exports = {
     phone: 'phone number',
   },
   foundingDate: '2020',
-  recaptcha_key: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+  recaptcha_key: process.env.GATSBY_CAPTCHA_KEY,
 };
