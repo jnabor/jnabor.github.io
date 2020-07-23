@@ -1,3 +1,4 @@
+const config = require('./src/data/config');
 
 require('dotenv').config({
   path: `.env`,
@@ -5,9 +6,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: process.env.GATSBY_TITLE,
-    description: process.env.GATSBY_DESCRIPTION,
-    author: process.env.GATSBY_AUTHOR,
+    title: config.defaultTitle,
+    description: config.defaultDescription,
+    author: config.author,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -29,14 +30,14 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: process.env.GATSBY_THEME_COLOR,
+        color: config.themeColor,
         showSpinner: false,
       },
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
+        trackingId: config.googleAnalyticsID,
         head: true,
       },
     },
@@ -61,11 +62,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: process.env.GATSBY_TITLE,
+        name: config.defaultTitle,
         short_name: 'starter',
         start_url: '/',
-        background_color: process.env.GATSBY_BACKGROUND_COLOR,
-        theme_color: process.env.GATSBY_THEME_COLOR,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
         display: 'minimal-ui',
         icon: './static/favicon/favicon.png',
       },
