@@ -12,7 +12,8 @@ const ContactForm = ({
 	errors,
 	touched,
 }) => { 
-	const disableButton = !values.name || !values.email || !values.message || isSubmitting	
+	console.log('submitting:', isSubmitting)
+	const disableButton = !values.name || !values.email || !values.message || isSubmitting	|| !values.recaptcha
 	const CaptchaHandler = (value) => {
 		setFieldValue('recaptcha', value)
 	}
@@ -116,6 +117,7 @@ export default withFormik({
 		{ setSubmitting, resetForm, setFieldValue }
 	) => {
 		try {
+			setSubmitting(true)
 			const encode = data => {
 				return Object.keys(data)
 					.map(
@@ -134,7 +136,10 @@ export default withFormik({
 				  } else {
 					console.log('error!')
 				  }		
-				setTimeout(()=> resetForm(), 2000)
+				setTimeout(()=> {
+					resetForm()
+					setSubmitting(false)
+				}, 2000)
 	  		}
 			xhr.setRequestHeader('Content-Type', 'application/json')
 			xhr.setRequestHeader('x-api-key', process.env.GATSBY_EMAIL_API_KEY)
@@ -156,13 +161,12 @@ export default withFormik({
 			  })
 			  
 			console.log('sending email...')
-      		xhr.send(msg)
-			setSubmitting(false)
+      		xhr.send(msg)		
 
 		} catch (err) {
 			setSubmitting(false)
 			setFieldValue('success', false)
-			alert('Something went wrong, please try again!') // eslint-disable-line
+			console.log('Something went wrong, please try again!') // eslint-disable-line
 		}
 	},
 })(ContactForm)

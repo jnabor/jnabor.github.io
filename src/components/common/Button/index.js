@@ -18,6 +18,8 @@ export const Button = styled.button`
   background: rgba(255, 255, 255, 0.01);
   box-shadow: 7px 7px 14px #2b2b2c, -7px -7px 14px #3f3f40;
   margin-top: 10px;
+  cursor:inherit;
+
   &:focus {
     outline: none;
   }
@@ -25,7 +27,8 @@ export const Button = styled.button`
     background: rgba(0, 0, 0, 0.1);
     color: rgba(255, 255, 255, 0.3);
   }
-  &:hover {
+  &:enabled:hover {
     background: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
   }
 `

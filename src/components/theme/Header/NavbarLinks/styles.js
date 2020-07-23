@@ -23,9 +23,7 @@ export const HomeIcon = styled.div`
   width: 24px;
   padding: 14px;
   border-radius: 32px;
-  &:hover {
-		background-color: rgba(0,0,0, 0.03);
-  }
+  
 
   @media (max-width: 520px) {
 	padding: 8px;
@@ -33,11 +31,14 @@ export const HomeIcon = styled.div`
 			 
   ${({current}) => 
 	  current ? `
-	  box-shadow:  4px 4px 4px #2d2d2e inset, 
-			 -4px -4px 4px #3d3d3e inset;
+	  box-shadow:  4px 4px 4px #2d2d2e inset, -4px -4px 4px #3d3d3e inset;
+	  cursor: default;
 	  ` : `
-	  box-shadow:  4px 4px 4px #2d2d2e, 
-			 -4px -4px 4px #3d3d3e;
+	  box-shadow:  4px 4px 4px #2d2d2e, -4px -4px 4px #3d3d3e;
+	  cursor: pointer;
+	  &:hover {
+		background-color: rgba(0,0,0, 0.03);
+  		}
 	  `
 	}
 `
@@ -47,9 +48,6 @@ export const NavButton = styled.div`
   color: rgba(255,255,255,0.7);  
   font-size: 12px;	
   letter-spacing: 2px;		 
-  &:hover {
-		background-color: rgba(0,0,0, 0.03);
-  }
 
   @media (max-width: 520px) {
 	padding: 12px 12px;
@@ -57,11 +55,14 @@ export const NavButton = styled.div`
 
   ${({current}) => 
 	  current ? `
-	  box-shadow:  4px 4px 4px #2d2d2e inset, 
-			 -4px -4px 4px #3d3d3e inset;
+	  box-shadow:  4px 4px 4px #2d2d2e inset, -4px -4px 4px #3d3d3e inset;
+	  cursor: default;
 	  ` : `
-	  box-shadow:  4px 4px 4px #2d2d2e, 
-	  -4px -4px 4px #3d3d3e;
+	  box-shadow:  4px 4px 4px #2d2d2e, -4px -4px 4px #3d3d3e;
+	  cursor: pointer;
+	  &:hover {
+		background-color: rgba(0,0,0, 0.03);
+  		}
 	  `
 	}
 `
