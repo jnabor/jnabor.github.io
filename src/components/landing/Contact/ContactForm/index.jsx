@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, withFormik, FastField, ErrorMessage } from 'formik'
-import Recaptcha from 'react-google-recaptcha'
+import ReCaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import { Button, Input } from 'components/common'
 import { Error, Center, InputField } from './styles'
@@ -13,6 +13,32 @@ const ContactForm = ({
 	touched,
 }) => { 
 	console.log('captcha: ', process.env.GATSBY_CAPTCHA_KEY)
+
+	const disableButton = !values.name || !values.email || !values.message || isSubmitting
+	
+	const CaptchaHandler = (value) => {
+		setFieldValue('recaptcha', value)
+	}
+
+	const Captcha = (values.name && values.email && values.message) ?
+	<InputField>
+		<FastField
+			component={ReCaptcha}
+			sitekey={process.env.GATSBY_CAPTCHA_KEY}
+			name="recaptcha"
+			onChange={value => CaptchaHandler(value)}
+		/>
+		<ErrorMessage component={Error} name="recaptcha" />
+	</InputField> : null
+
+	const Success = (values.success) ?
+	<InputField>
+		<Center>
+			<h4>
+				Your message has been successfully sent!
+			</h4>
+		</Center>
+	</InputField> : null
 
 	return (
 	<Form
@@ -61,29 +87,10 @@ const ContactForm = ({
 			/>
 			<ErrorMessage component={Error} name="message" />
 		</InputField>
-		{values.name && values.email && values.message && (
-			<InputField>
-				<FastField
-					component={Recaptcha}
-					sitekey={process.env.GATSBY_CAPTCHA_KEY}
-					name="recaptcha"
-					onChange={value => { setFieldValue('recaptcha', value)
-					console.log('captcha: ', value)}}
-				/>
-				<ErrorMessage component={Error} name="recaptcha" />
-			</InputField>
-		)}
-		{values.success && (
-			<InputField>
-				<Center>
-					<h4>
-						Your message has been successfully sent!
-					</h4>
-				</Center>
-			</InputField>
-		)}
+		{Captcha}
+		{Success }
 		<Center>
-			<Button secondary type="submit" disabled={!values.name || !values.email || !values.message || isSubmitting}>
+			<Button secondary type="submit" disabled={disableButton}>
 				SUBMIT
 			</Button>
 		</Center>
