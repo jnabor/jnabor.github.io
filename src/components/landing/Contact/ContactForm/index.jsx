@@ -1,9 +1,8 @@
 import React from 'react'
 import { Form, withFormik, FastField, ErrorMessage } from 'formik'
-import Recaptcha from 'react-google-recaptcha'
+import ReCaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import { Button, Input } from 'components/common'
-import { recaptcha_key } from 'data/config'
 import { Error, Center, InputField } from './styles'
 
 const ContactForm = ({
@@ -12,7 +11,33 @@ const ContactForm = ({
 	values,
 	errors,
 	touched,
-}) => (
+}) => { 
+	const disableButton = !values.name || !values.email || !values.message || isSubmitting	
+	const CaptchaHandler = (value) => {
+		setFieldValue('recaptcha', value)
+	}
+
+	const Captcha = (values.name && values.email && values.message) ?
+	<InputField>
+		<FastField
+			component={ReCaptcha}
+			sitekey={process.env.GATSBY_CAPTCHA_KEY}
+			name="recaptcha"
+			onChange={value => CaptchaHandler(value)}
+		/>
+		<ErrorMessage component={Error} name="recaptcha" />
+	</InputField> : null
+
+	const Success = (values.success) ?
+	<InputField>
+		<Center>
+			<h4>
+				Your message has been successfully sent!
+			</h4>
+		</Center>
+	</InputField> : null
+
+	return (
 	<Form
 		name="portfolio-dev"
 		method="post"
@@ -27,7 +52,7 @@ const ContactForm = ({
 				name="name"
 				component="input"
 				aria-label="name"
-				placeholder="Full name*"
+				placeholder="Name*"
 				error={touched.name && errors.name}
 			/>
 			<ErrorMessage component={Error} name="name" />
@@ -59,34 +84,15 @@ const ContactForm = ({
 			/>
 			<ErrorMessage component={Error} name="message" />
 		</InputField>
-		{values.name && values.email && values.message && (
-			<InputField>
-				<FastField
-					component={Recaptcha}
-					sitekey={recaptcha_key}
-					name="recaptcha"
-					onChange={value => setFieldValue('recaptcha', value)}
-				/>
-				<ErrorMessage component={Error} name="recaptcha" />
-			</InputField>
-		)}
-		{values.success && (
-			<InputField>
-				<Center>
-					<h4>
-						Your message has been successfully sent, I will get back to you
-						ASAP!
-					</h4>
-				</Center>
-			</InputField>
-		)}
+		{Captcha}
+		{Success }
 		<Center>
-			<Button secondary type="submit" disabled={isSubmitting}>
-				Submit
+			<Button secondary type="submit" disabled={disableButton}>
+				SUBMIT
 			</Button>
 		</Center>
 	</Form>
-)
+)}
 
 export default withFormik({
 	mapPropsToValues: () => ({
@@ -134,22 +140,23 @@ export default withFormik({
 			xhr.setRequestHeader('Content-Type', 'application/json')
 			xhr.setRequestHeader('x-api-key', process.env.GATSBY_EMAIL_API_KEY)
 
-      		let myMessage = message
       		// eslint-disable-next-line
-      		myMessage = myMessage
+      		let myMessage = message
         		.replace(/\n/g, '\\\\n')
         		.replace(/\r/g, '\\\\r')
 				.replace(/\t/g, '\\\\t')
+				.replace(`"`, `\\"`)
+	
 			
-			console.log('forming email...')
       		const msg = JSON.stringify({
         		to: process.env.GATSBY_EMAIL_RECEIVER,
-        		body: myMessage,
-        		subject: 'email from jnabor.github.io',
-        		fromname: name,
-        		fromemail: email
+        		body: (`${myMessage}`),
+        		subject: 'jnabor.github.io contact',
+        		fromname: `${name}`,
+        		fromemail: `${email}`
 			  })
 			  
+			console.log(msg)
 			console.log('sending email...')
       		xhr.send(msg)
 			setSubmitting(false)
