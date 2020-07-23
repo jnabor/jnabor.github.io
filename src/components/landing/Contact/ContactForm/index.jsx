@@ -156,7 +156,6 @@ export default withFormik({
         		fromemail: `${email}`
 			  })
 			  
-			console.log(msg)
 			console.log('sending email...')
       		xhr.send(msg)
 			setSubmitting(false)

@@ -8,11 +8,16 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="twitter.svg"
+   sodipodi:docname="home-solid.svg"
    id="svg4"
    version="1.1"
-   height="1792"
-   width="1792">
+   viewBox="0 0 576 512"
+   role="img"
+   class="svg-inline--fa fa-home fa-w-18"
+   data-icon="home"
+   data-prefix="fas"
+   focusable="false"
+   aria-hidden="true">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -31,9 +36,9 @@
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
      inkscape:window-x="-8"
-     inkscape:cy="896"
-     inkscape:cx="896"
-     inkscape:zoom="0.41015625"
+     inkscape:cy="256"
+     inkscape:cx="288"
+     inkscape:zoom="1.4355469"
      showgrid="false"
      id="namedview6"
      inkscape:window-height="1137"
@@ -47,8 +52,8 @@
      bordercolor="#666666"
      pagecolor="#ffffff" />
   <path
-     style="fill:#5f5fd3"
+     style="fill:#f2f2f2"
      id="path2"
-     d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5T1369.5 1125 1185 1335.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T285 1033q33 5 61 5 43 0 85-11-112-23-185.5-111.5T172 710v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5T884 653q-8-38-8-74 0-134 94.5-228.5T1199 256q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
-     fill="#F9A826" />
+     d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+     fill="currentColor" />
 </svg>

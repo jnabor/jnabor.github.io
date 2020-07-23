@@ -1,74 +1,123 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { Container, Card } from 'components/common'
-import starIcon from 'assets/icons/star.svg'
-import forkIcon from 'assets/icons/fork.svg'
-import { Wrapper, Grid, Item, Content, Stats } from './styles'
+import { Container } from 'components/common'
+import { Wrapper, Grid } from './styles'
+import styles from './index.module.css';
 
 export const Projects = () => {
-  const {
-    github: {
-      viewer: {
-        repositories: { edges },
-      },
-    },
-  } = useStaticQuery(
-    graphql`
-      {
-        github {
-          viewer {
-            repositories(
-              first: 14
-              orderBy: { field: STARGAZERS, direction: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  name
-                  url
-                  description
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
-                }
-              }
-            }
-          }
-        }
-      }
-    `
-  )
+
   return (
     <Wrapper as={Container} id="projects">
-      <h2>GitHub Projects</h2>
+      <div className={styles.header}>
+        <h3>Personal Projects</h3>
+      </div>
+
       <Grid>
-        {edges.map(({ node }) => (
-          <Item
-            key={node.id}
-            as="a"
-            href={node.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Card>
-              <Content>
-                <h4>{node.name}</h4>
-                <p>{node.description}</p>
-              </Content>
-              <Stats>
-                <div>
-                  <img src={starIcon} alt="stars" />
-                  <span>{node.stargazers.totalCount}</span>
+        <a target="_blank" rel="noopener noreferrer" href="https://saeyr.com">
+          <div className={styles.item}>
+            <div className={styles.card}>
+              <div className={`${styles.thumbnail} ${styles.thumbnail2}`} />
+              <div className={styles.content}>
+                <div className={styles.logo}>
+                  <img src="./icons/saeyr_64.png" />
                 </div>
-                <div>
-                  <img src={forkIcon} alt="forks" />
-                  <span>{node.forkCount}</span>
+                <div className={styles.desc}>
+                  <div className={styles.title}>Saeyr™</div>
+                  <div style={{ padding: '0px 15px 0 10px' }}>
+                    Automation for voice and text processing
+                  </div>
                 </div>
-              </Stats>
-            </Card>
-          </Item>
-        ))}
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://ra2.sonabstudios.com"
+        >
+          <div className={styles.item}>
+            <div className={styles.card}>
+              <div className={`${styles.thumbnail} ${styles.thumbnail1}`} />
+              <div className={styles.content}>
+                <div className={styles.logo}>
+                  <img src="./icons/ra2_64.png" />
+                </div>
+                <div className={styles.desc}>
+                  <div className={styles.title}>RA2™ Serverless</div>
+                  <div style={{ padding: '0px 15px 0 10px' }}>
+                    SaaS Starter Kit with React, AWS Amplify
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://jnabor.github.io/kryptodash"
+        >
+          <div className={styles.item}>
+            <div className={styles.card}>
+              <div className={`${styles.thumbnail} ${styles.thumbnail3}`} />
+              <div className={styles.content}>
+                <div className={styles.logo}>
+                  <img src="./icons/kryptodash_64.png" />
+                </div>
+                <div className={styles.desc}>
+                  <div className={styles.title}>KryptoDash™</div>
+                  <div style={{ padding: '0px 15px 0 10px' }}>
+                    Cryptocurrency prices and history
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://sonabstudios.com"
+        >
+          <div className={styles.item}>
+            <div className={styles.card}>
+              <div className={`${styles.thumbnail} ${styles.thumbnail5}`} />
+              <div className={styles.content}>
+                <div className={styles.logo}>
+                  <img src="./icons/sonabstudios_64.png" />
+                </div>
+                <div className={styles.desc}>
+                  <div className={styles.title}>SonabStudios™</div>
+                  <div style={{ padding: '0px 15px 0 10px' }}>
+                    My website created with Nuxt.js
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://jnabor.github.io/react-robot-game/"
+        >
+          <div className={styles.item}>
+            <div className={styles.card}>
+              <div className={`${styles.thumbnail} ${styles.thumbnail4}`} />
+              <div className={styles.content}>
+                <div className={styles.logo}>
+                  <img src="./icons/robot_64.png" />
+                </div>
+                <div className={styles.desc}>
+                  <div className={styles.title}>Robot Game™</div>
+                  <div style={{ padding: '0px 15px 0 10px' }}>
+                    A simple matrix game made with React
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
       </Grid>
     </Wrapper>
   )

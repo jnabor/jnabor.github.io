@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
-  background-image: url(${detailsIllustration});
+  margin-top: 100px;
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
@@ -44,8 +44,10 @@ export const Details = styled.div`
 `;
 
 export const Thumbnail = styled.div`
+margin-top: 80px;
   flex: 1;
-
+  z-index: 99;
+  
   @media (max-width: 960px) {
     width: 100%;
     margin-bottom: 2rem;

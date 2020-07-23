@@ -1,6 +1,5 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Container, Button } from 'components/common'
+import { Container } from 'components/common'
 import dev from 'assets/illustrations/skills.svg'
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles'
 
@@ -8,12 +7,12 @@ export const Skills = () => (
   <Wrapper id="about">
     <SkillsWrapper as={Container}>
       <Thumbnail>
-        <img src={dev} alt="I’m Jayson and I’m a Software & DevOps Engineer!" />
+        <img src={dev} alt="I’m Jayson and I’m a Software Engineer!" />
       </Thumbnail>
       <Details>
-        <h1>Technologies</h1>
-        <p>
-          AWS, TypeScript, React, Embedded, etc.
+        <h1 style={{ color: '#DFDFDF' }}>Full Stack</h1>
+        <p style={{ color: '#C5C5C5' }}>
+          AWS, TypeScript, React, Node, Golang, DevOps
         </p>
       </Details>
     </SkillsWrapper>
